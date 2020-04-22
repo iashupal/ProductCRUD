@@ -70,3 +70,8 @@
     font-weight: 600;
     text-align: center;
 }
+@media screen and (max-width:767px){
+    .crud__form{
+        width: 100%;
+    }
+}

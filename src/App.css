@@ -6,3 +6,13 @@
     position: relative;
     font-family: 'Open Sans', sans-serif;
 }
+@media screen and (max-width:992px){
+    .app{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 767px){
+    .app {
+        width: 95%;
+    }
+}

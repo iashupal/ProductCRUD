@@ -15,7 +15,7 @@ const ProductList = () => {
                 {products.map(product => (
                     <div className="crud__list" key={product.id}>
                         <Row gutter={16}>
-                            <Col span={18}>
+                            <Col span={14}>
                                 <div className="crud__inrlist">
                                     <p className=""><span>Product Name: </span>{product.name}</p>
                                     <p className=""><span>Description: </span>{product.description}</p>
@@ -23,13 +23,13 @@ const ProductList = () => {
                                     <p className=""><span>Price: </span>{product.price}</p>
                                 </div>
                             </Col>
-                            <Col span={6}>
+                            <Col span={10}>
                                 <div className="right">
-                                    <Link to={`/edit/${product.id}`}>
-                                        <Button className="" icon={<EditOutlined />}>Edit</Button>
-                                    </Link>
-                                    <Divider type="vertical" />
-                                    <Button onClick={() => removeProduct(product.id)} type="danger" icon={<DeleteOutlined />}>Delete</Button>
+                                        <Link to={`/edit/${product.id}`}>
+                                            <Button size="small" icon={<EditOutlined />}>Edit</Button>
+                                        </Link>
+                                        <Divider type="vertical" />
+                                    <Button onClick={() => removeProduct(product.id)} size="small" type="danger" icon={<DeleteOutlined />}>Delete</Button>
                                 </div>
                             </Col>
                         </Row>

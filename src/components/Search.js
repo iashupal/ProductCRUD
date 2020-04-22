@@ -20,7 +20,9 @@ function Search(){
                 </Form.Item>
                 </Col>
                 <Col span={2}>
-                    <Button type="primary" onClick={handleChange}>Search</Button>
+                    <div className="right">
+                        <Button type="primary" onClick={handleChange}>Search</Button>
+                    </div>
                 </Col>
             </Row>
         </Form>
